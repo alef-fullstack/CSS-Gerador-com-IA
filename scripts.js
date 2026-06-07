@@ -1,5 +1,5 @@
 let botao = document.querySelector(".botao-gerar")
-let chave = "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"
+let chave = "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"
 let endereco ="https://api.groq.com/openai/v1/chat/completions"
 async function gerarCodigo(){
     let textoUsuario = document.querySelector(".caixa-texto").value
@@ -9,7 +9,7 @@ async function gerarCodigo(){
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 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"
+            "Authorization": "Bearer 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"
         },
         body: JSON.stringify({
             model: "llama-3.3-70b-versatile",
